@@ -21,7 +21,7 @@ class RegistroRequest(
 
 @RestController
 @RequestMapping("/api")
-data class UsuarioController(
+class UsuarioController(
 
     private val usuarioService: UsuarioService
 ) {
