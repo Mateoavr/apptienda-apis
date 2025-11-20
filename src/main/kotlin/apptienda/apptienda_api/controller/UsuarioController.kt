@@ -29,7 +29,7 @@ class UsuarioController(
 
 
     @PostMapping("/registrar")
-    fun registrar(@RequestBody request: RegistroRequest): ResponseEntity<Usuario> {
+    fun registrar(@RequestBody request: Usuario): ResponseEntity<Usuario> {
         logger.info("Intento de registro para correo: ${request.correo}")
 
 

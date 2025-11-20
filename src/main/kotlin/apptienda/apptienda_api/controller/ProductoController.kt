@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController
 
 
 @RestController
-@RequestMapping("/api/productos")
+@RequestMapping("/api/producto")
 class ProductoController (
     private val productoRepository: ProductoRepository
 ) {
 
     @GetMapping
-    fun getProductos(): List<Producto> {
+    fun getProducto(): List<Producto> {
         return productoRepository.findAll()
     }
 
