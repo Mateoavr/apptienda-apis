@@ -15,5 +15,6 @@ data class Producto (
     val nombre: String? = null,
     val precio: Int,
     val descripcion: String,
-    val rating: Float? = null
+    val rating: Float? = null,
+    val imagen: String? = null
 )
