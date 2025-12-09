@@ -10,9 +10,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api/producto")
-class ProductoController (
-    private val productoRepository: ProductoRepository
-) {
+class ProductoController (private val productoRepository: ProductoRepository) {
 
     @GetMapping
     fun getProducto(): List<Producto> {
