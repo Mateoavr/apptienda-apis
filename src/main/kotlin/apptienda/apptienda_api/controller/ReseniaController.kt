@@ -4,6 +4,7 @@ import apptienda.apptienda_api.model.Resenia
 import apptienda.apptienda_api.repository.ReseniaRepository
 import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
@@ -24,5 +25,9 @@ class ReseniaController (private val repository: ReseniaRepository) {
     @GetMapping
     fun obtenerTodas(): List<Resenia> {
         return repository.findAll()
+    }
+    @GetMapping("/{codigo}")
+    fun obtenerPorCodigo(@PathVariable codigo: String): List<Resenia> {
+        return repository.findByCodigo(codigo)
     }
 }

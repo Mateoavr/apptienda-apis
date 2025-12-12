@@ -10,4 +10,5 @@ interface ReseniaRepository  : JpaRepository<Resenia, Int> {
 
 
     fun findByCodigo(codigo: String): List<Resenia>
+
 }
