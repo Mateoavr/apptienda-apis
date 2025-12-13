@@ -1,7 +1,8 @@
 package apptienda.apptienda_api.controller
 
 import apptienda.apptienda_api.model.Usuario
-import apptienda.apptienda_api.model.UsuarioService
+import apptienda.apptienda_api.model.sevice.UsuarioService
+
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping

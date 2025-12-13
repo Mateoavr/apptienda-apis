@@ -2,7 +2,8 @@ package apptienda.apptienda_api.controller
 
 import apptienda.apptienda_api.DTO.CarritoAdd
 
-import apptienda.apptienda_api.model.CarritoService
+
+import apptienda.apptienda_api.model.sevice.CarritoService
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
